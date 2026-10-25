@@ -1,7 +1,7 @@
 {
   "endpoints": {
     "https://list-smith-production.up.railway.app/v1/fix": {
-      "recorded_at": "2026-10-25T05:44:56.623510+00:00",
+      "recorded_at": "2026-10-25T08:20:01.904341+00:00",
       "sha256": "cb63b06ce6976b3383b19686fb0173c62438c71cdf97b754efec79d9a115faac",
       "surface": {
         "bazaar_info": {
@@ -503,7 +503,7 @@
       }
     },
     "https://list-smith-production.up.railway.app/v1/grade": {
-      "recorded_at": "2026-10-25T05:44:56.372968+00:00",
+      "recorded_at": "2026-10-25T08:20:01.599216+00:00",
       "sha256": "6a7e93e7722c999a1ead4b5f0e8eabf7c26882157b1efd2ffa27cb0d96c87e8f",
       "surface": {
         "bazaar_info": {
@@ -1039,7 +1039,7 @@
       }
     },
     "https://route-verdict-production.up.railway.app/v1/check": {
-      "recorded_at": "2026-10-25T05:44:55.492093+00:00",
+      "recorded_at": "2026-10-25T08:20:00.386132+00:00",
       "sha256": "e98f494e7ba61f9b21c9f7632363d3e8928269b060bdfb0ffec60b2d2cb534b7",
       "surface": {
         "bazaar_info": {
@@ -1891,7 +1891,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/allowance-audit": {
-      "recorded_at": "2026-10-25T05:44:57.850825+00:00",
+      "recorded_at": "2026-10-25T08:20:03.428401+00:00",
       "sha256": "e53b690b703283ae26be29058e7e9f7827c57a76ee9c82f72b71e5fd468ae0a8",
       "surface": {
         "bazaar_info": {
@@ -2152,7 +2152,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/card-smith": {
-      "recorded_at": "2026-10-25T05:44:59.730217+00:00",
+      "recorded_at": "2026-10-25T08:20:05.886772+00:00",
       "sha256": "5811b39e97bccb023e44303eafcdac9ac311d75f82566d6d6c16f267451aa684",
       "surface": {
         "bazaar_info": {
@@ -2353,7 +2353,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/gas-oracle": {
-      "recorded_at": "2026-10-25T05:44:58.302737+00:00",
+      "recorded_at": "2026-10-25T08:20:04.037079+00:00",
       "sha256": "15df3b6a086f6334d56a14163baa30b8f7543f8adfcfd4d415b305178b5bfb36",
       "surface": {
         "bazaar_info": {
@@ -2507,7 +2507,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/job-scout": {
-      "recorded_at": "2026-10-25T05:44:59.956714+00:00",
+      "recorded_at": "2026-10-25T08:20:06.192412+00:00",
       "sha256": "52140f7dd77bdc901c0bd84228c030d31a60551cc28279454cca7695fa6bcf54",
       "surface": {
         "bazaar_info": {
@@ -2728,7 +2728,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/page-to-markdown": {
-      "recorded_at": "2026-10-25T05:44:59.045946+00:00",
+      "recorded_at": "2026-10-25T08:20:04.961953+00:00",
       "sha256": "0c1e4a313842df693eef8cba66bd60264d43b899dcff3ff7e0e69060f90d0cca",
       "surface": {
         "bazaar_info": {
@@ -2840,7 +2840,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/price-check": {
-      "recorded_at": "2026-10-25T05:44:59.520054+00:00",
+      "recorded_at": "2026-10-25T08:20:05.581390+00:00",
       "sha256": "fdc3a35e4eb8cadc8e590cbb860234dc16dea0ae671467f0c482dc9ec292898c",
       "surface": {
         "bazaar_info": {
@@ -3067,8 +3067,8 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/recheck": {
-      "recorded_at": "2026-10-25T05:45:00.191206+00:00",
-      "sha256": "5f464193d18212162a3b10691eb257b7b653397e8e411ddf81b9a2eaab1b5f42",
+      "recorded_at": "2026-10-25T08:20:06.525193+00:00",
+      "sha256": "9addc4aebaf5266da96d09886c2a7e908f6e41ba8a466ecdfc10f78e88ce96d3",
       "surface": {
         "bazaar_info": {
           "input": {
@@ -3189,7 +3189,7 @@
           "network": "eip155:8453",
           "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
         },
-        "description": "Change detection for anything with a URL, built for monitoring loops: probe one x402 resource or web page WITHOUT paying it and answer BASELINE, UNCHANGED, or CHANGED with a field-by-field diff (price, asset, payTo, schema, page body) against the last check for that watch. Use this when an agent runs on a schedule and needs to know what changed before spending money or attention. Watch state is per-deployment; a redeploy re-baselines. Packs: $1 for 250 checks on one endpoint.",
+        "description": "Change detection for anything with a URL, built for monitoring loops: probe one x402 resource or web page WITHOUT paying it and answer BASELINE, UNCHANGED, or CHANGED with a field-by-field diff (price, asset, payTo, schema, page body) against the last check for that watch. Use this when an agent runs on a schedule and needs to know what changed before spending money or attention. Watch and pack state persist across redeploys on the service volume. Packs: $1 for 250 checks on one endpoint.",
         "manifest": {
           "accepts": {
             "amount": "5000",
@@ -3197,7 +3197,7 @@
             "network": "eip155:8453",
             "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
           },
-          "description": "Change detection for anything with a URL, built for monitoring loops: probe one x402 resource or web page WITHOUT paying it and answer BASELINE, UNCHANGED, or CHANGED with a field-by-field diff (price, asset, payTo, schema, page body) against the last check for that watch. Use this when an agent runs on a schedule and needs to know what changed before spending money or attention. Watch state is per-deployment; a redeploy re-baselines. Packs: $1 for 250 checks on one endpoint.",
+          "description": "Change detection for anything with a URL, built for monitoring loops: probe one x402 resource or web page WITHOUT paying it and answer BASELINE, UNCHANGED, or CHANGED with a field-by-field diff (price, asset, payTo, schema, page body) against the last check for that watch. Use this when an agent runs on a schedule and needs to know what changed before spending money or attention. Watch and pack state persist across redeploys on the service volume. Packs: $1 for 250 checks on one endpoint.",
           "inputSchema": {
             "properties": {
               "pack_id": {
@@ -3295,8 +3295,8 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/recheck/pack": {
-      "recorded_at": "2026-10-25T05:45:00.563698+00:00",
-      "sha256": "b280320f2857dfd52f3f7cfc3c33e7aee01979dd5dc2a1a51a53b60b6070c1db",
+      "recorded_at": "2026-10-25T08:20:06.881575+00:00",
+      "sha256": "db3e8d90ba58d99a9e39da078556a44ffed9081d2e847bbe3b7f57976891164e",
       "surface": {
         "bazaar_info": {
           "input": {
@@ -3371,7 +3371,7 @@
           "network": "eip155:8453",
           "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
         },
-        "description": "Prepaid Recheck watch pack: one $1.00 payment buys 250 change-checks against ONE endpoint URL ($0.004 per check instead of $0.005), good for 90 days. Returns an unguessable pack id \u2014 spend credits by sending it with POST /v1/recheck (body pack_id or X-Recheck-Pack header), and read the balance free at POST /v1/recheck/pack-balance. Use this when a monitoring loop checks the same endpoint on a schedule and wants one payment instead of hundreds.",
+        "description": "Recheck watch pack: one $1.00 payment buys 250 change-checks for ONE endpoint ($0.004 per check instead of $0.005), good for 90 days. Pack credits persist across redeploys on the service volume. Returns an unguessable pack id \u2014 spend credits via POST /v1/recheck (body pack_id or X-Recheck-Pack header), and read the balance free at POST /v1/recheck/pack-balance. Use this when a monitoring loop checks the same endpoint on a schedule and wants one payment instead of hundreds.",
         "manifest": {
           "accepts": {
             "amount": "1000000",
@@ -3379,7 +3379,7 @@
             "network": "eip155:8453",
             "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
           },
-          "description": "Prepaid Recheck watch pack: one $1.00 payment buys 250 change-checks against ONE endpoint URL ($0.004 per check instead of $0.005), good for 90 days. Returns an unguessable pack id \u2014 spend credits by sending it with POST /v1/recheck (body pack_id or X-Recheck-Pack header), and read the balance free at POST /v1/recheck/pack-balance. Use this when a monitoring loop checks the same endpoint on a schedule and wants one payment instead of hundreds.",
+          "description": "Recheck watch pack: one $1.00 payment buys 250 change-checks for ONE endpoint ($0.004 per check instead of $0.005), good for 90 days. Pack credits persist across redeploys on the service volume. Returns an unguessable pack id \u2014 spend credits via POST /v1/recheck (body pack_id or X-Recheck-Pack header), and read the balance free at POST /v1/recheck/pack-balance. Use this when a monitoring loop checks the same endpoint on a schedule and wants one payment instead of hundreds.",
           "inputSchema": {
             "properties": {
               "url": {
@@ -3438,7 +3438,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/repo-vitals": {
-      "recorded_at": "2026-10-25T05:44:59.300376+00:00",
+      "recorded_at": "2026-10-25T08:20:05.271001+00:00",
       "sha256": "81c3dd1385ded3ada1c31a2c5955a74da60d8bb9c2a346fb2b8d5eb1fa29f76c",
       "surface": {
         "bazaar_info": {
@@ -3644,7 +3644,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/tube-search": {
-      "recorded_at": "2026-10-25T05:44:58.828550+00:00",
+      "recorded_at": "2026-10-25T08:20:04.655933+00:00",
       "sha256": "42273e4ef9a15597022954dbbcc17ff5d89aa538bf718838b7d0587ebf263630",
       "surface": {
         "bazaar_info": {
@@ -3823,7 +3823,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/tx-decoder": {
-      "recorded_at": "2026-10-25T05:44:58.062849+00:00",
+      "recorded_at": "2026-10-25T08:20:03.734687+00:00",
       "sha256": "74946c97630288ac3702bbad57d7ebfc05ee4dfc6e7e3f4bb9d4094b0fba23c6",
       "surface": {
         "bazaar_info": {
@@ -4083,7 +4083,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/wallet-snapshot": {
-      "recorded_at": "2026-10-25T05:44:57.627262+00:00",
+      "recorded_at": "2026-10-25T08:20:03.117476+00:00",
       "sha256": "77a9250584974f33dcdd2f6bbe8f25df416271d900e09c1ba0053be0126a1280",
       "surface": {
         "bazaar_info": {
@@ -4366,7 +4366,7 @@
       }
     },
     "https://stall-row-production.up.railway.app/v1/wallet-verdict": {
-      "recorded_at": "2026-10-25T05:44:58.548871+00:00",
+      "recorded_at": "2026-10-25T08:20:04.348380+00:00",
       "sha256": "a9cd783add9ed7ac32c4e022e79b10a4877b620f638aa9ea1db60dcb021da42b",
       "surface": {
         "bazaar_info": {
@@ -4578,12 +4578,13 @@
       }
     },
     "https://token-verdict-production.up.railway.app/v1/batch-verdict": {
-      "recorded_at": "2026-10-25T05:44:54.369326+00:00",
-      "sha256": "2889d8721639838085ed0dfc10368b2eb9b8016a0c1d5b3c142f7c7cccb3937e",
+      "recorded_at": "2026-10-25T08:19:59.125769+00:00",
+      "sha256": "b7f986eaa6fd2273d150abbe007caad14742ae88766d0561cacc0e206395f62e",
       "surface": {
         "bazaar_info": {
           "input": {
             "body": {
+              "mode": "compact",
               "token_addresses": [
                 "0x2821d96B5FC81aEC3763340b375a846a89A3Ec1b",
                 "0x000000000000000000000000000000000000dEaD"
@@ -4597,82 +4598,24 @@
             "example": {
               "chain": "base",
               "evaluated_count": 1,
-              "not_checked": "Per-token limits apply: market structure only.",
+              "mode": "compact",
+              "not_checked": "Per-token limits apply (see each result's take): market structure only \u2014 no contract honeypot simulation, no holder concentration.",
               "requested_count": 2,
               "results": [
                 {
                   "address": "0x2821d96B5FC81aEC3763340b375a846a89A3Ec1b",
-                  "market": {
-                    "dex": "uniswap",
-                    "liquidity_usd": 259106,
-                    "pair_url": "https://dexscreener.com/base/0x2821d96b5fc81aec3763340b375a846a89a3ec1b",
-                    "price_change_24h_pct": 0.55,
-                    "price_usd": "0.0003238",
-                    "txns_24h": {
-                      "buys": 1,
-                      "sells": 2
-                    },
-                    "volume_24h_usd": 0.01
-                  },
                   "reason": null,
                   "score": 35.0,
-                  "signals": [
-                    {
-                      "detail": "Deep liquidity ($259,106) \u2014 absorbs real selling.",
-                      "name": "Liquidity depth",
-                      "score": 5,
-                      "weight": 3
-                    },
-                    {
-                      "detail": "24h volume is $0 \u2014 effectively no market.",
-                      "name": "Volume churn",
-                      "score": 60,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "67% sells vs 33% buys \u2014 clear distribution.",
-                      "name": "Sell pressure",
-                      "score": 60,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "24h price action (+0.6%) is unremarkable.",
-                      "name": "Price action",
-                      "score": 10,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "3 transactions in 24h \u2014 a handful of wallets is the market.",
-                      "name": "Trader breadth",
-                      "score": 70,
-                      "weight": 1
-                    },
-                    {
-                      "detail": "Pair has meaningful history.",
-                      "name": "Pair age",
-                      "score": 5,
-                      "weight": 1
-                    }
-                  ],
                   "status": "ok",
-                  "take": "BASE (Base King) trades at $0.0003238 on uniswap; $259.1k liquidity. Trading has stopped \u2014 $0 volume across 3 transactions in 24h \u2014 a dormant book, not a live market. Verdict: CAUTION \u2014 small size at most. Not checked: honeypot simulation and holder concentration \u2014 market structure only.",
-                  "token": {
-                    "address": "0x2821d96B5FC81aEC3763340b375a846a89A3Ec1b",
-                    "chain": "base",
-                    "name": "Base King",
-                    "symbol": "BASE"
-                  },
+                  "symbol": "BASE",
                   "verdict": "CAUTION"
                 },
                 {
                   "address": "0x000000000000000000000000000000000000dEaD",
-                  "market": null,
                   "reason": "No DEXScreener pair found for this token on base.",
                   "score": null,
-                  "signals": [],
                   "status": "unknown",
-                  "take": null,
-                  "token": null,
+                  "symbol": null,
                   "verdict": "UNKNOWN"
                 }
               ],
@@ -4693,6 +4636,14 @@
                 },
                 "evaluated_count": {
                   "type": "integer"
+                },
+                "mode": {
+                  "description": "The response mode that produced this result (echo of the request's mode, 'full' when omitted). Compact entries carry address/status/symbol/verdict/score/reason only.",
+                  "enum": [
+                    "full",
+                    "compact"
+                  ],
+                  "type": "string"
                 },
                 "not_checked": {
                   "type": "string"
@@ -4758,6 +4709,13 @@
                           "unknown"
                         ],
                         "type": "string"
+                      },
+                      "symbol": {
+                        "description": "Compact mode only: the token's symbol (null when the token is UNKNOWN)",
+                        "type": [
+                          "string",
+                          "null"
+                        ]
                       },
                       "take": {
                         "type": [
@@ -4840,7 +4798,7 @@
           "network": "eip155:8453",
           "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
         },
-        "description": "Screen up to 25 Base tokens in one flat-fee call: per-token SOLID / CAUTION / DANGER verdicts with scores and signals, sorted riskiest first, plus summary counts; tokens that cannot be fetched return UNKNOWN with a reason, and if most of the batch fails the call fails unsettled. Use this when an agent holds a list of candidate tokens and needs the risky ones flagged before trading any of them.",
+        "description": "Screen up to 25 Base tokens in one flat-fee call: per-token SOLID / CAUTION / DANGER verdicts with scores and signals, sorted riskiest first, plus summary counts; tokens that cannot be fetched return UNKNOWN with a reason, and if most of the batch fails the call fails unsettled. Mode 'compact' returns per-token verdict and score plus the counts only. Use this when an agent holds a list of candidate tokens and needs the risky ones flagged before trading any of them.",
         "manifest": {
           "accepts": {
             "amount": "200000",
@@ -4848,9 +4806,17 @@
             "network": "eip155:8453",
             "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
           },
-          "description": "Screen 1-25 Base tokens in one flat-fee call: per-token SOLID / CAUTION / DANGER verdicts with scores, sorted riskiest first, plus summary counts; unfetchable tokens return UNKNOWN with a reason. Use this when an agent is screening a list of tokens before trading any of them.",
+          "description": "Screen 1-25 Base tokens in one flat-fee call: per-token SOLID / CAUTION / DANGER verdicts with scores, sorted riskiest first, plus summary counts; unfetchable tokens return UNKNOWN with a reason. Mode 'compact' returns per-token verdict/score and the counts only. Use this when an agent is screening a list of tokens before trading any of them.",
           "inputSchema": {
             "properties": {
+              "mode": {
+                "description": "Optional response mode, default 'full'. 'full' returns every per-token verdict in full (signals, take, market data). 'compact' returns per-token address, symbol, verdict and score (plus the reason for UNKNOWN entries) and the summary counts \u2014 the same screen, a smaller response.",
+                "enum": [
+                  "full",
+                  "compact"
+                ],
+                "type": "string"
+              },
               "token_addresses": {
                 "description": "1-25 Base token contract addresses (0x...). Duplicates are screened once.",
                 "items": {
@@ -4874,6 +4840,14 @@
               },
               "evaluated_count": {
                 "type": "integer"
+              },
+              "mode": {
+                "description": "The response mode that produced this result (echo of the request's mode, 'full' when omitted). Compact entries carry address/status/symbol/verdict/score/reason only.",
+                "enum": [
+                  "full",
+                  "compact"
+                ],
+                "type": "string"
               },
               "not_checked": {
                 "type": "string"
@@ -4939,6 +4913,13 @@
                         "unknown"
                       ],
                       "type": "string"
+                    },
+                    "symbol": {
+                      "description": "Compact mode only: the token's symbol (null when the token is UNKNOWN)",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
                     },
                     "take": {
                       "type": [
@@ -5017,13 +4998,14 @@
       }
     },
     "https://token-verdict-production.up.railway.app/v1/pre-trade": {
-      "recorded_at": "2026-10-25T05:44:54.145576+00:00",
-      "sha256": "9961e8429d4e0f3f6f7d57114736548535c6fef8ff6ec47b48682a080ac2a918",
+      "recorded_at": "2026-10-25T08:19:58.775531+00:00",
+      "sha256": "7e211893e22ff7bee80bf9b47d10234d64d308ea84eb0e76c65d64189047c1df",
       "surface": {
         "bazaar_info": {
           "input": {
             "body": {
               "chain": "base",
+              "mode": "compact",
               "spender": null,
               "token_address": "0x2821d96B5FC81aEC3763340b375a846a89A3Ec1b",
               "wallet_address": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
@@ -5036,95 +5018,24 @@
             "example": {
               "abort_reasons": [],
               "degraded": false,
-              "legs": {
-                "token": {
-                  "market": {
-                    "dex": "uniswap",
-                    "liquidity_usd": 259106,
-                    "pair_url": "https://dexscreener.com/base/0x2821d96b5fc81aec3763340b375a846a89a3ec1b",
-                    "price_change_24h_pct": 0.55,
-                    "price_usd": "0.0003238",
-                    "txns_24h": {
-                      "buys": 1,
-                      "sells": 2
-                    },
-                    "volume_24h_usd": 0.01
-                  },
-                  "risk_score": 35.0,
-                  "signals": [
-                    {
-                      "detail": "Deep liquidity ($259,106) \u2014 absorbs real selling.",
-                      "name": "Liquidity depth",
-                      "score": 5,
-                      "weight": 3
-                    },
-                    {
-                      "detail": "24h volume is $0 \u2014 effectively no market.",
-                      "name": "Volume churn",
-                      "score": 60,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "67% sells vs 33% buys \u2014 clear distribution.",
-                      "name": "Sell pressure",
-                      "score": 60,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "24h price action (+0.6%) is unremarkable.",
-                      "name": "Price action",
-                      "score": 10,
-                      "weight": 2
-                    },
-                    {
-                      "detail": "3 transactions in 24h \u2014 a handful of wallets is the market.",
-                      "name": "Trader breadth",
-                      "score": 70,
-                      "weight": 1
-                    },
-                    {
-                      "detail": "Pair has meaningful history.",
-                      "name": "Pair age",
-                      "score": 5,
-                      "weight": 1
-                    }
-                  ],
+              "legs": [
+                {
+                  "headline": "3 transactions in 24h \u2014 a handful of wallets is the market.",
+                  "leg": "token",
+                  "score": 35.0,
                   "status": "ok",
-                  "take": "BASE (Base King) trades at $0.0003238 on uniswap; $259.1k liquidity. Trading has stopped \u2014 $0 volume across 3 transactions in 24h \u2014 a dormant book, not a live market. Verdict: CAUTION \u2014 small size at most. Not checked: honeypot simulation and holder concentration \u2014 market structure only.",
-                  "token": {
-                    "address": "0x2821d96B5FC81aEC3763340b375a846a89A3Ec1b",
-                    "chain": "base",
-                    "name": "Base King",
-                    "symbol": "BASE"
-                  },
                   "verdict": "CAUTION"
                 },
-                "wallet": {
-                  "address": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F",
-                  "first_activity": "2025-11-02T14:03:11+00:00",
-                  "not_checked": "Not checked: the person or entity behind the address.",
-                  "outgoing_tx_count_nonce": 137,
-                  "poisoning": {
-                    "detail": "No zero-value lookalike transfers in the recent history sampled.",
-                    "signals": [],
-                    "status": "none_found"
-                  },
-                  "reasons": [],
-                  "risk_score": 0,
-                  "sanctions": {
-                    "detail": "Address does not appear in the bundled OFAC SDN digital-currency snapshot.",
-                    "matched": false,
-                    "snapshot_date": "2026-10-21",
-                    "snapshot_entries": 91,
-                    "snapshot_source": "https://www.treasury.gov/ofac/downloads/sdn.csv",
-                    "status": "no_match"
-                  },
+                {
+                  "headline": "No risk deductions \u2014 sanctions no_match, poisoning none_found.",
+                  "leg": "wallet",
+                  "score": 0,
                   "status": "ok",
-                  "verdict": "SAFE",
-                  "wallet_age_days": 357
+                  "verdict": "SAFE"
                 }
-              },
-              "not_checked": "Not checked: contract honeypot simulation and holder concentration.",
+              ],
+              "mode": "compact",
+              "not_checked": "Not checked: contract honeypot simulation and holder concentration (need a paid indexer), the person or entity behind the wallet, and approvals beyond the allowance leg. Leg-level limits are itemised in full mode's per-leg not_checked fields.",
               "score": 35.0,
               "spender": null,
               "token": {
@@ -5134,7 +5045,8 @@
                 "symbol": "BASE"
               },
               "verdict": "CAUTION",
-              "wallet": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
+              "wallet": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F",
+              "worst_leg": "token"
             },
             "schema": {
               "properties": {
@@ -5149,267 +5061,325 @@
                   "type": "boolean"
                 },
                 "legs": {
-                  "properties": {
-                    "allowance": {
+                  "anyOf": [
+                    {
                       "properties": {
-                        "active_approvals": {
-                          "type": [
-                            "array",
-                            "string"
-                          ]
-                        },
-                        "allowance_checks_performed": {
-                          "type": "integer"
-                        },
-                        "max_risk": {
-                          "enum": [
-                            "high",
-                            "medium",
-                            "none",
-                            "unknown"
-                          ],
-                          "type": "string"
-                        },
-                        "not_checked": {
-                          "type": "string"
-                        },
-                        "owner": {
-                          "type": "string"
-                        },
-                        "spender": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "spenders_checked": {
-                          "type": "integer"
-                        },
-                        "status": {
-                          "enum": [
-                            "ok",
-                            "unknown"
-                          ],
-                          "type": "string"
-                        },
-                        "summary": {
-                          "type": "string"
-                        },
-                        "tokens_held_checked": {
-                          "type": [
-                            "integer",
-                            "string"
-                          ]
-                        },
-                        "unlimited_approvals": {
-                          "type": [
-                            "integer",
-                            "string"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "status"
-                      ],
-                      "type": "object"
-                    },
-                    "token": {
-                      "properties": {
-                        "detail": {
-                          "type": "string"
-                        },
-                        "risk_score": {
-                          "maximum": 100,
-                          "minimum": 0,
-                          "type": [
-                            "number",
-                            "null"
-                          ]
-                        },
-                        "signals": {
-                          "items": {
-                            "properties": {
-                              "detail": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "score": {
-                                "maximum": 100,
-                                "minimum": 0,
-                                "type": "integer"
-                              },
-                              "weight": {
-                                "type": "number"
-                              }
-                            },
-                            "required": [
-                              "name",
-                              "score",
-                              "weight",
-                              "detail"
-                            ],
-                            "type": "object"
-                          },
-                          "type": "array"
-                        },
-                        "status": {
-                          "enum": [
-                            "ok",
-                            "unknown"
-                          ],
-                          "type": "string"
-                        },
-                        "take": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "token": {
+                        "allowance": {
                           "properties": {
-                            "address": {
-                              "type": "string"
+                            "active_approvals": {
+                              "type": [
+                                "array",
+                                "string"
+                              ]
                             },
-                            "chain": {
-                              "type": "string"
+                            "allowance_checks_performed": {
+                              "type": "integer"
                             },
-                            "name": {
-                              "type": "string"
-                            },
-                            "symbol": {
-                              "type": "string"
-                            }
-                          },
-                          "type": [
-                            "object",
-                            "null"
-                          ]
-                        },
-                        "verdict": {
-                          "enum": [
-                            "SOLID",
-                            "CAUTION",
-                            "DANGER",
-                            null
-                          ],
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "status"
-                      ],
-                      "type": "object"
-                    },
-                    "wallet": {
-                      "properties": {
-                        "address": {
-                          "type": "string"
-                        },
-                        "first_activity": {
-                          "type": "string"
-                        },
-                        "not_checked": {
-                          "type": "string"
-                        },
-                        "outgoing_tx_count_nonce": {
-                          "type": [
-                            "integer",
-                            "null"
-                          ]
-                        },
-                        "poisoning": {
-                          "properties": {
-                            "signals": {
-                              "type": "array"
-                            },
-                            "status": {
+                            "max_risk": {
                               "enum": [
-                                "signals_found",
-                                "none_found",
+                                "high",
+                                "medium",
+                                "none",
                                 "unknown"
                               ],
                               "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "reasons": {
-                          "type": "array"
-                        },
-                        "risk_score": {
-                          "maximum": 100,
-                          "minimum": 0,
-                          "type": [
-                            "number",
-                            "null"
-                          ]
-                        },
-                        "sanctions": {
-                          "properties": {
-                            "matched": {
-                              "type": [
-                                "boolean",
-                                "null"
-                              ]
                             },
-                            "snapshot_date": {
+                            "not_checked": {
+                              "type": "string"
+                            },
+                            "owner": {
+                              "type": "string"
+                            },
+                            "spender": {
                               "type": [
                                 "string",
                                 "null"
                               ]
                             },
+                            "spenders_checked": {
+                              "type": "integer"
+                            },
                             "status": {
                               "enum": [
-                                "matched",
-                                "no_match",
+                                "ok",
                                 "unknown"
                               ],
                               "type": "string"
+                            },
+                            "summary": {
+                              "type": "string"
+                            },
+                            "tokens_held_checked": {
+                              "type": [
+                                "integer",
+                                "string"
+                              ]
+                            },
+                            "unlimited_approvals": {
+                              "type": [
+                                "integer",
+                                "string"
+                              ]
                             }
                           },
+                          "required": [
+                            "status"
+                          ],
                           "type": "object"
                         },
-                        "status": {
-                          "enum": [
-                            "ok",
-                            "unknown"
+                        "token": {
+                          "properties": {
+                            "detail": {
+                              "type": "string"
+                            },
+                            "risk_score": {
+                              "maximum": 100,
+                              "minimum": 0,
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "signals": {
+                              "items": {
+                                "properties": {
+                                  "detail": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "score": {
+                                    "maximum": 100,
+                                    "minimum": 0,
+                                    "type": "integer"
+                                  },
+                                  "weight": {
+                                    "type": "number"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "score",
+                                  "weight",
+                                  "detail"
+                                ],
+                                "type": "object"
+                              },
+                              "type": "array"
+                            },
+                            "status": {
+                              "enum": [
+                                "ok",
+                                "unknown"
+                              ],
+                              "type": "string"
+                            },
+                            "take": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "token": {
+                              "properties": {
+                                "address": {
+                                  "type": "string"
+                                },
+                                "chain": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "symbol": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": [
+                                "object",
+                                "null"
+                              ]
+                            },
+                            "verdict": {
+                              "enum": [
+                                "SOLID",
+                                "CAUTION",
+                                "DANGER",
+                                null
+                              ],
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "status"
                           ],
-                          "type": "string"
+                          "type": "object"
                         },
-                        "verdict": {
-                          "enum": [
-                            "SAFE",
-                            "CAUTION",
-                            "AVOID",
-                            null
+                        "wallet": {
+                          "properties": {
+                            "address": {
+                              "type": "string"
+                            },
+                            "first_activity": {
+                              "type": "string"
+                            },
+                            "not_checked": {
+                              "type": "string"
+                            },
+                            "outgoing_tx_count_nonce": {
+                              "type": [
+                                "integer",
+                                "null"
+                              ]
+                            },
+                            "poisoning": {
+                              "properties": {
+                                "signals": {
+                                  "type": "array"
+                                },
+                                "status": {
+                                  "enum": [
+                                    "signals_found",
+                                    "none_found",
+                                    "unknown"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "reasons": {
+                              "type": "array"
+                            },
+                            "risk_score": {
+                              "maximum": 100,
+                              "minimum": 0,
+                              "type": [
+                                "number",
+                                "null"
+                              ]
+                            },
+                            "sanctions": {
+                              "properties": {
+                                "matched": {
+                                  "type": [
+                                    "boolean",
+                                    "null"
+                                  ]
+                                },
+                                "snapshot_date": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "status": {
+                                  "enum": [
+                                    "matched",
+                                    "no_match",
+                                    "unknown"
+                                  ],
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            },
+                            "status": {
+                              "enum": [
+                                "ok",
+                                "unknown"
+                              ],
+                              "type": "string"
+                            },
+                            "verdict": {
+                              "enum": [
+                                "SAFE",
+                                "CAUTION",
+                                "AVOID",
+                                null
+                              ],
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "wallet_age_days": {
+                              "type": [
+                                "integer",
+                                "null"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "status"
                           ],
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "wallet_age_days": {
-                          "type": [
-                            "integer",
-                            "null"
-                          ]
+                          "type": "object"
                         }
                       },
                       "required": [
-                        "status"
+                        "token"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "items": {
+                        "properties": {
+                          "headline": {
+                            "type": "string"
+                          },
+                          "leg": {
+                            "enum": [
+                              "token",
+                              "wallet",
+                              "allowance"
+                            ],
+                            "type": "string"
+                          },
+                          "score": {
+                            "maximum": 100,
+                            "minimum": 0,
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "status": {
+                            "enum": [
+                              "ok",
+                              "unknown"
+                            ],
+                            "type": "string"
+                          },
+                          "verdict": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "leg",
+                          "status",
+                          "headline"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
                     }
-                  },
-                  "required": [
-                    "token"
                   ],
-                  "type": "object"
+                  "description": "Full mode: an object keyed by leg name with each leg in full. Compact mode: an array of per-leg summaries (see worst_leg)."
+                },
+                "mode": {
+                  "description": "The response mode that produced this result (echo of the request's mode, 'full' when omitted). The legs shape follows it.",
+                  "enum": [
+                    "full",
+                    "compact"
+                  ],
+                  "type": "string"
                 },
                 "not_checked": {
                   "type": "string"
@@ -5442,6 +5412,18 @@
                     "string",
                     "null"
                   ]
+                },
+                "worst_leg": {
+                  "description": "Compact mode only: the leg that drove the combined outcome (a hard-abort source, else the highest-risk scored leg)",
+                  "enum": [
+                    "token",
+                    "wallet",
+                    null
+                  ],
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 }
               },
               "required": [
@@ -5462,7 +5444,7 @@
           "network": "eip155:8453",
           "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
         },
-        "description": "One combined go/no-go before an agent spends: PROCEED / CAUTION / ABORT from the token's market verdict, the counterparty wallet's sanctions, age and poisoning check, and \u2014 with a spender \u2014 its ERC-20 approvals. A leg that cannot be evaluated returns unknown and caps the verdict at CAUTION. Use this when an agent is about to swap, pay, or route funds and needs token + wallet risk in a single call.",
+        "description": "One combined go/no-go before an agent spends: PROCEED / CAUTION / ABORT from the token's market verdict, the counterparty wallet's sanctions, age and poisoning check, and \u2014 with a spender \u2014 its ERC-20 approvals. A leg that cannot be evaluated returns unknown and caps the verdict at CAUTION. Mode 'compact' returns the decision, the worst leg, and one summary per leg. Use this when an agent is about to swap, pay, or route funds and needs token + wallet risk in one call.",
         "manifest": {
           "accepts": {
             "amount": "50000",
@@ -5470,7 +5452,7 @@
             "network": "eip155:8453",
             "payTo": "0x097f9685D1e0752bF8B02d61E5Ce9be7eA0FBA7F"
           },
-          "description": "Combined go/no-go before a trade: PROCEED / CAUTION / ABORT from the token's market verdict, the wallet's sanctions/age/poisoning check, and (with a spender) its ERC-20 approvals. Use this when an agent is about to swap or pay and needs token + wallet + allowance risk in one call.",
+          "description": "Combined go/no-go before a trade: PROCEED / CAUTION / ABORT from the token's market verdict, the wallet's sanctions/age/poisoning check, and (with a spender) its ERC-20 approvals. Mode 'compact' returns the decision plus per-leg summaries. Use this when an agent is about to swap or pay and needs token + wallet + allowance risk in one call.",
           "inputSchema": {
             "properties": {
               "chain": {
@@ -5480,6 +5462,14 @@
                   "base",
                   "ethereum",
                   "solana"
+                ],
+                "type": "string"
+              },
+              "mode": {
+                "description": "Optional response mode, default 'full'. 'full' returns every leg in full (signals, market data, sanctions and poisoning detail). 'compact' returns the decision, the worst leg, and one summary per leg (verdict, score, headline reason) \u2014 the same computation, a smaller response.",
+                "enum": [
+                  "full",
+                  "compact"
                 ],
                 "type": "string"
               },
@@ -5520,267 +5510,325 @@
                 "type": "boolean"
               },
               "legs": {
-                "properties": {
-                  "allowance": {
+                "anyOf": [
+                  {
                     "properties": {
-                      "active_approvals": {
-                        "type": [
-                          "array",
-                          "string"
-                        ]
-                      },
-                      "allowance_checks_performed": {
-                        "type": "integer"
-                      },
-                      "max_risk": {
-                        "enum": [
-                          "high",
-                          "medium",
-                          "none",
-                          "unknown"
-                        ],
-                        "type": "string"
-                      },
-                      "not_checked": {
-                        "type": "string"
-                      },
-                      "owner": {
-                        "type": "string"
-                      },
-                      "spender": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "spenders_checked": {
-                        "type": "integer"
-                      },
-                      "status": {
-                        "enum": [
-                          "ok",
-                          "unknown"
-                        ],
-                        "type": "string"
-                      },
-                      "summary": {
-                        "type": "string"
-                      },
-                      "tokens_held_checked": {
-                        "type": [
-                          "integer",
-                          "string"
-                        ]
-                      },
-                      "unlimited_approvals": {
-                        "type": [
-                          "integer",
-                          "string"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "status"
-                    ],
-                    "type": "object"
-                  },
-                  "token": {
-                    "properties": {
-                      "detail": {
-                        "type": "string"
-                      },
-                      "risk_score": {
-                        "maximum": 100,
-                        "minimum": 0,
-                        "type": [
-                          "number",
-                          "null"
-                        ]
-                      },
-                      "signals": {
-                        "items": {
-                          "properties": {
-                            "detail": {
-                              "type": "string"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "score": {
-                              "maximum": 100,
-                              "minimum": 0,
-                              "type": "integer"
-                            },
-                            "weight": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "name",
-                            "score",
-                            "weight",
-                            "detail"
-                          ],
-                          "type": "object"
-                        },
-                        "type": "array"
-                      },
-                      "status": {
-                        "enum": [
-                          "ok",
-                          "unknown"
-                        ],
-                        "type": "string"
-                      },
-                      "take": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "token": {
+                      "allowance": {
                         "properties": {
-                          "address": {
-                            "type": "string"
+                          "active_approvals": {
+                            "type": [
+                              "array",
+                              "string"
+                            ]
                           },
-                          "chain": {
-                            "type": "string"
+                          "allowance_checks_performed": {
+                            "type": "integer"
                           },
-                          "name": {
-                            "type": "string"
-                          },
-                          "symbol": {
-                            "type": "string"
-                          }
-                        },
-                        "type": [
-                          "object",
-                          "null"
-                        ]
-                      },
-                      "verdict": {
-                        "enum": [
-                          "SOLID",
-                          "CAUTION",
-                          "DANGER",
-                          null
-                        ],
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "status"
-                    ],
-                    "type": "object"
-                  },
-                  "wallet": {
-                    "properties": {
-                      "address": {
-                        "type": "string"
-                      },
-                      "first_activity": {
-                        "type": "string"
-                      },
-                      "not_checked": {
-                        "type": "string"
-                      },
-                      "outgoing_tx_count_nonce": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ]
-                      },
-                      "poisoning": {
-                        "properties": {
-                          "signals": {
-                            "type": "array"
-                          },
-                          "status": {
+                          "max_risk": {
                             "enum": [
-                              "signals_found",
-                              "none_found",
+                              "high",
+                              "medium",
+                              "none",
                               "unknown"
                             ],
                             "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "reasons": {
-                        "type": "array"
-                      },
-                      "risk_score": {
-                        "maximum": 100,
-                        "minimum": 0,
-                        "type": [
-                          "number",
-                          "null"
-                        ]
-                      },
-                      "sanctions": {
-                        "properties": {
-                          "matched": {
-                            "type": [
-                              "boolean",
-                              "null"
-                            ]
                           },
-                          "snapshot_date": {
+                          "not_checked": {
+                            "type": "string"
+                          },
+                          "owner": {
+                            "type": "string"
+                          },
+                          "spender": {
                             "type": [
                               "string",
                               "null"
                             ]
                           },
+                          "spenders_checked": {
+                            "type": "integer"
+                          },
                           "status": {
                             "enum": [
-                              "matched",
-                              "no_match",
+                              "ok",
                               "unknown"
                             ],
                             "type": "string"
+                          },
+                          "summary": {
+                            "type": "string"
+                          },
+                          "tokens_held_checked": {
+                            "type": [
+                              "integer",
+                              "string"
+                            ]
+                          },
+                          "unlimited_approvals": {
+                            "type": [
+                              "integer",
+                              "string"
+                            ]
                           }
                         },
+                        "required": [
+                          "status"
+                        ],
                         "type": "object"
                       },
-                      "status": {
-                        "enum": [
-                          "ok",
-                          "unknown"
+                      "token": {
+                        "properties": {
+                          "detail": {
+                            "type": "string"
+                          },
+                          "risk_score": {
+                            "maximum": 100,
+                            "minimum": 0,
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "signals": {
+                            "items": {
+                              "properties": {
+                                "detail": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "score": {
+                                  "maximum": 100,
+                                  "minimum": 0,
+                                  "type": "integer"
+                                },
+                                "weight": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "name",
+                                "score",
+                                "weight",
+                                "detail"
+                              ],
+                              "type": "object"
+                            },
+                            "type": "array"
+                          },
+                          "status": {
+                            "enum": [
+                              "ok",
+                              "unknown"
+                            ],
+                            "type": "string"
+                          },
+                          "take": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "token": {
+                            "properties": {
+                              "address": {
+                                "type": "string"
+                              },
+                              "chain": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "symbol": {
+                                "type": "string"
+                              }
+                            },
+                            "type": [
+                              "object",
+                              "null"
+                            ]
+                          },
+                          "verdict": {
+                            "enum": [
+                              "SOLID",
+                              "CAUTION",
+                              "DANGER",
+                              null
+                            ],
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
                         ],
-                        "type": "string"
+                        "type": "object"
                       },
-                      "verdict": {
-                        "enum": [
-                          "SAFE",
-                          "CAUTION",
-                          "AVOID",
-                          null
+                      "wallet": {
+                        "properties": {
+                          "address": {
+                            "type": "string"
+                          },
+                          "first_activity": {
+                            "type": "string"
+                          },
+                          "not_checked": {
+                            "type": "string"
+                          },
+                          "outgoing_tx_count_nonce": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "poisoning": {
+                            "properties": {
+                              "signals": {
+                                "type": "array"
+                              },
+                              "status": {
+                                "enum": [
+                                  "signals_found",
+                                  "none_found",
+                                  "unknown"
+                                ],
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "reasons": {
+                            "type": "array"
+                          },
+                          "risk_score": {
+                            "maximum": 100,
+                            "minimum": 0,
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "sanctions": {
+                            "properties": {
+                              "matched": {
+                                "type": [
+                                  "boolean",
+                                  "null"
+                                ]
+                              },
+                              "snapshot_date": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "status": {
+                                "enum": [
+                                  "matched",
+                                  "no_match",
+                                  "unknown"
+                                ],
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "status": {
+                            "enum": [
+                              "ok",
+                              "unknown"
+                            ],
+                            "type": "string"
+                          },
+                          "verdict": {
+                            "enum": [
+                              "SAFE",
+                              "CAUTION",
+                              "AVOID",
+                              null
+                            ],
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "wallet_age_days": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "status"
                         ],
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "wallet_age_days": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ]
+                        "type": "object"
                       }
                     },
                     "required": [
-                      "status"
+                      "token"
                     ],
                     "type": "object"
+                  },
+                  {
+                    "items": {
+                      "properties": {
+                        "headline": {
+                          "type": "string"
+                        },
+                        "leg": {
+                          "enum": [
+                            "token",
+                            "wallet",
+                            "allowance"
+                          ],
+                          "type": "string"
+                        },
+                        "score": {
+                          "maximum": 100,
+                          "minimum": 0,
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "status": {
+                          "enum": [
+                            "ok",
+                            "unknown"
+                          ],
+                          "type": "string"
+                        },
+                        "verdict": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "leg",
+                        "status",
+                        "headline"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
                   }
-                },
-                "required": [
-                  "token"
                 ],
-                "type": "object"
+                "description": "Full mode: an object keyed by leg name with each leg in full. Compact mode: an array of per-leg summaries (see worst_leg)."
+              },
+              "mode": {
+                "description": "The response mode that produced this result (echo of the request's mode, 'full' when omitted). The legs shape follows it.",
+                "enum": [
+                  "full",
+                  "compact"
+                ],
+                "type": "string"
               },
               "not_checked": {
                 "type": "string"
@@ -5813,6 +5861,18 @@
                   "string",
                   "null"
                 ]
+              },
+              "worst_leg": {
+                "description": "Compact mode only: the leg that drove the combined outcome (a hard-abort source, else the highest-risk scored leg)",
+                "enum": [
+                  "token",
+                  "wallet",
+                  null
+                ],
+                "type": [
+                  "string",
+                  "null"
+                ]
               }
             },
             "required": [
@@ -5829,7 +5889,7 @@
       }
     },
     "https://token-verdict-production.up.railway.app/v1/verdict": {
-      "recorded_at": "2026-10-25T05:44:53.855796+00:00",
+      "recorded_at": "2026-10-25T08:19:58.405903+00:00",
       "sha256": "b47f2996c3dc578023ec45fb22db70698f609e83bf7f29e76f48c40da3529331",
       "surface": {
         "bazaar_info": {

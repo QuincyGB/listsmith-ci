@@ -68,7 +68,10 @@ Honestly: this tool reads **public discovery surfaces only** — the unpaid 402 
 
 ## Dogfooding
 
-This repo's `dogfood` workflow (manual dispatch only) runs Tier 1 against all 19 paid routes of the Verdict Row fleet — the shovel checks its own makers first. As of the v1 run (2026-10-25): 17 of 19 routes pass every rule; Token Verdict's `/v1/pre-trade` (2,519-byte sample) and `/v1/batch-verdict` (1,981-byte sample) fail `sample-size` — real traps, reported in the open, fixed by trimming the samples like `/v1/verdict` was.
+This repo's `dogfood` workflow (manual dispatch only) runs Tier 1 against all 19 paid routes of the Verdict Row fleet — the shovel checks its own makers first. As of the refresh on 2026-10-25, **all 19 routes pass every rule**. The two former failures are fixed:
+
+- Token Verdict `/v1/pre-trade` — **FIXED**: a compact mode replaced the 2,519-byte full-response sample with a real 880-byte compact sample.
+- Token Verdict `/v1/batch-verdict` — **FIXED**: a compact mode replaced the 1,981-byte full-response sample with a real 691-byte compact sample.
 
 ## License
 
