@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "listsmith-ci"
+version = "1.0.0"
+description = "CI checks that fail an x402 seller's build on listing traps before inspectors and buyers find them."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+    "jsonschema>=4.10",
+]
+
+[project.optional-dependencies]
+paid = ["eth-account>=0.10"]
+dev = ["pytest>=8", "eth-account>=0.10"]
+
+[project.scripts]
+listsmith-ci = "listsmith_ci.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["listsmith_ci*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,38 @@
+name: dogfood
+
+# Tier 1 against the Verdict Row fleet itself — the shovel checks its
+# own makers first. Manual dispatch ONLY (never on push): the fleet's
+# live discovery surfaces are the fixture, and a human decides when to
+# look. Free checks only — unpaid fetches, no wallet involved.
+on:
+  workflow_dispatch:
+
+jobs:
+  dogfood:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./
+        with:
+          baseline-path: ".listsmith-ci-dogfood-baseline.json"
+          endpoints: |
+            https://token-verdict-production.up.railway.app/v1/verdict
+            https://token-verdict-production.up.railway.app/v1/pre-trade
+            https://token-verdict-production.up.railway.app/v1/batch-verdict
+            https://route-verdict-production.up.railway.app/v1/check
+            https://list-smith-production.up.railway.app/v1/grade
+            https://list-smith-production.up.railway.app/v1/fix
+            https://stall-row-production.up.railway.app/v1/wallet-snapshot
+            https://stall-row-production.up.railway.app/v1/allowance-audit
+            https://stall-row-production.up.railway.app/v1/tx-decoder
+            https://stall-row-production.up.railway.app/v1/gas-oracle
+            https://stall-row-production.up.railway.app/v1/wallet-verdict
+            https://stall-row-production.up.railway.app/v1/tube-search
+            https://stall-row-production.up.railway.app/v1/page-to-markdown
+            https://stall-row-production.up.railway.app/v1/repo-vitals
+            https://stall-row-production.up.railway.app/v1/price-check
+            https://stall-row-production.up.railway.app/v1/card-smith
+            https://stall-row-production.up.railway.app/v1/job-scout
+            https://stall-row-production.up.railway.app/v1/recheck
+            https://stall-row-production.up.railway.app/v1/recheck/pack

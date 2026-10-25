@@ -1,0 +1,108 @@
+name: "listsmith-ci"
+description: >-
+  Fail your build on x402 listing traps — oversized output samples,
+  over-long descriptions, hollow schemas, example/schema mismatches,
+  manifest drift — before an inspector or buyer ever sees them.
+author: "Verdict Row (QuincyGB)"
+branding:
+  icon: "shield"
+  color: "purple"
+
+inputs:
+  endpoints:
+    description: "Endpoint URLs to check, one per line (or space/comma separated)."
+    required: true
+  baseline-path:
+    description: "Path of the drift baseline file, kept in your repo."
+    required: false
+    default: ".listsmith-ci-baseline.json"
+  update-baseline:
+    description: "Set to 'true' to re-record the drift baseline from the current live surfaces."
+    required: false
+    default: "false"
+  fail-on-drift:
+    description: >-
+      Accepted for forward compatibility; drift failures always fail
+      the build in v1 (that is the point of the baseline).
+    required: false
+    default: "true"
+  paid-grade:
+    description: "Tier 2 (opt-in): pay ListSmith /v1/grade ($0.10) per endpoint. Needs the wallet-key secret."
+    required: false
+    default: "false"
+  paid-route-verdict:
+    description: "Tier 2 (opt-in): pay RouteVerdict /v1/check ($0.05) per endpoint. Needs the wallet-key secret."
+    required: false
+    default: "false"
+  grade-floor:
+    description: "Minimum ListSmith grade when paid-grade is on."
+    required: false
+    default: "80"
+  wallet-key:
+    description: >-
+      Your OWN wallet private key (0x...), passed via a GitHub secret —
+      used only to pay for Tier-2 checks. Never logged.
+    required: false
+    default: ""
+  report-path:
+    description: "Where to write the markdown report (PR-comment friendly)."
+    required: false
+    default: "listsmith-ci-report.md"
+
+outputs:
+  result:
+    description: "'pass' when every check passed, 'fail' otherwise."
+    value: ${{ steps.check.outputs.result }}
+  report-path:
+    description: "Path of the markdown report file."
+    value: ${{ steps.check.outputs.report-path }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install listsmith-ci
+      shell: bash
+      run: |
+        python -m pip install --quiet "${{ github.action_path }}[paid]"
+
+    - name: Run listing checks
+      id: check
+      shell: bash
+      env:
+        # The seller's own key, from their secret. Passed through the
+        # environment only; listsmith-ci never logs it.
+        LISTSMITH_CI_PRIVATE_KEY: ${{ inputs.wallet-key }}
+      run: |
+        set -u
+        ENDPOINTS_RAW='${{ inputs.endpoints }}'
+        # Accept newline-, comma- or space-separated endpoint lists.
+        ENDPOINTS=$(printf '%s' "$ENDPOINTS_RAW" | tr ',\n' '  ' | xargs)
+        if [ -z "$ENDPOINTS" ]; then
+          echo "::error::listsmith-ci: no endpoints supplied"
+          exit 2
+        fi
+        ARGS=""
+        if [ '${{ inputs.paid-grade }}' = 'true' ]; then ARGS="$ARGS --paid-grade"; fi
+        if [ '${{ inputs.paid-route-verdict }}' = 'true' ]; then ARGS="$ARGS --paid-route-verdict"; fi
+        if [ '${{ inputs.update-baseline }}' = 'true' ]; then ARGS="$ARGS --update-baseline"; fi
+        set +e
+        listsmith-ci check $ENDPOINTS \
+          --baseline '${{ inputs.baseline-path }}' \
+          --grade-floor '${{ inputs.grade-floor }}' \
+          --report '${{ inputs.report-path }}' \
+          --summary "$GITHUB_STEP_SUMMARY" \
+          $ARGS
+        CODE=$?
+        set -e
+        if [ "$CODE" -eq 0 ]; then
+          echo "result=pass" >> "$GITHUB_OUTPUT"
+        else
+          echo "result=fail" >> "$GITHUB_OUTPUT"
+        fi
+        echo "report-path=${{ inputs.report-path }}" >> "$GITHUB_OUTPUT"
+        exit "$CODE"
